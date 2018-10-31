@@ -1,0 +1,25 @@
+1	What	_	PRON	WP	PronType=Int	0	root	_	_
+2	is	_	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	_
+3	the	_	DET	DT	Definite=Def|PronType=Art	6	det	_	_
+4	first	_	ADJ	JJ	Degree=Pos|NumType=Ord	6	amod	_	_
+5	Indian	_	ADJ	JJ	Degree=Pos	6	amod	_	_
+6	text	_	NOUN	NN	Number=Sing	1	nsubj	_	_
+7	to	_	PART	TO	_	8	mark	_	_
+8	mention	_	VERB	VB	VerbForm=Inf	6	acl	_	_
+9	iron	_	NOUN	NN	Number=Sing	8	obj	_	_
+10	?	_	PUNCT	.	_	1	punct	_	_
+
+1	Atharvaveda	_	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+
+1	What	_	PRON	WP	_	0	root	_	_
+2	is	_	AUX	VBZ	_	1	cop	_	_
+3	the	_	DET	DT	_	6	det	_	_
+4	first	_	ADJ	JJ	_	6	amod	_	_
+5	Indian	_	ADJ	JJ	_	6	amod	_	_
+6	text	_	NOUN	NN	_	1	nsubj	_	_
+7	to	_	PART	TO	_	8	mark	_	_
+8	mention	_	VERB	VB	_	6	acl	_	_
+9	iron	_	NOUN	NN	_	8	obj	_	_
+10	?	_	PUNCT	.	_	1	punct	_	_
+
+1	Atharvaveda	_	PROPN	NNP	_	0	root	_	_
