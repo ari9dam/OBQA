@@ -19,3 +19,9 @@ OBQA
     * Key Point to Note: CoNLLU format needs to be adhered strictly, Tabs between columns.
     * Trained Models to be pushed at a location : [DropboxLocation]
     
+## Word Intersection and Union datasets 
+1. Present in notebooks
+
+## BERT QA models
+1. Runner and scorer are present
+    
