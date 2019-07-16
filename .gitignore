@@ -1,2 +1,5 @@
 *.csv
 *.tsv
+*.tar.gz
+*.tar
+*.zip

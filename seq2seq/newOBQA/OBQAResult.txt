@@ -1,0 +1,461 @@
+
+1. Default - 
+
+
+
+CUDA_VISIBLE_DEVICES=0 python run.py train experiments/copynet_novocab.json --include-package models -s output1/
+"best_epoch": 87,
+  "peak_cpu_memory_MB": 3528.008,
+  "peak_gpu_0_memory_MB": 4469,
+  "training_duration": "00:56:16",
+  "training_start_epoch": 0,
+  "training_epochs": 99,
+  "epoch": 99,
+  "training_loss": 9.537748432159423,
+  "training_cpu_memory_MB": 3528.008,
+  "training_gpu_0_memory_MB": 4469,
+  "validation_BLEU": 2.5473138182057427e-06,
+  "validation_overlap_based_metric": 0.13014008133755084,
+  "validation_loss": 46.34900939464569,
+  "best_validation_BLEU": 1.6948933844379471e-09,
+  "best_validation_overlap_based_metric": 0.14008133755083596,
+  "best_validation_loss": 40.31043887138367
+
+
+2. Encoder -
+	1. hidden = 500
+	2. numberOfLayers = 2
+	3. attention = 1000 vs 1000
+
+  "best_epoch": 0,
+  "peak_cpu_memory_MB": 3709.404,
+  "peak_gpu_0_memory_MB": 4583,
+  "training_duration": "01:02:49",
+  "training_start_epoch": 0,
+  "training_epochs": 99,
+  "epoch": 99,
+  "training_loss": 34.35745101139463,
+  "training_cpu_memory_MB": 3709.404,
+  "training_gpu_0_memory_MB": 4583,
+  "validation_BLEU": 0.012742969270224351,
+  "validation_overlap_based_metric": 0.04609127880704925,
+  "validation_loss": 43.44630670547485,
+  "best_validation_BLEU": 0.010142695711747057,
+  "best_validation_overlap_based_metric": 0.07139629462268414,
+  "best_validation_loss": 36.587016224861145
+
+	1. hidden = 200
+	2. numberOfLayers = 2
+	3. attention = 400 vs 400
+
+  "best_epoch": 52,
+  "peak_cpu_memory_MB": 3597.528,
+  "peak_gpu_0_memory_MB": 4471,
+  "training_duration": "00:57:55",
+  "training_start_epoch": 0,
+  "training_epochs": 99,
+  "epoch": 99,
+  "training_loss": 8.607717888930749,
+  "training_cpu_memory_MB": 3597.528,
+  "training_gpu_0_memory_MB": 4471,
+  "validation_BLEU": 3.6455343280112886e-09,
+  "validation_overlap_based_metric": 0.15589697243560777,
+  "validation_loss": 38.167611479759216,
+  "best_validation_BLEU": 2.9554603557572066e-06,
+  "best_validation_overlap_based_metric": 0.1807501129688206,
+  "best_validation_loss": 26.920760750770571
+
+	1. hidden = 50
+	2. numberOfLayers = 2
+	3. attention = 100 vs 100
+
+  "best_epoch": 16,
+  "peak_cpu_memory_MB": 3554.78,
+  "peak_gpu_0_memory_MB": 4509,
+  "training_duration": "00:58:58",
+  "training_start_epoch": 0,
+  "training_epochs": 99,
+  "epoch": 99,
+  "training_loss": 0.03855377250061981,
+  "training_cpu_memory_MB": 3554.78,
+  "training_gpu_0_memory_MB": 4509,
+  "validation_BLEU": 0.057092212672456864,
+  "validation_overlap_based_metric": 0.3361952101220063,
+  "validation_loss": 51.84075427055359,
+  "best_validation_BLEU": 0.057965415258824815,
+  "best_validation_overlap_based_metric": 0.3624039765024853,
+  "best_validation_loss": 19.9895075559616145
+
+
+3. sgd-0.01
+
+ "best_epoch": 69,
+  "peak_cpu_memory_MB": 3428.972,
+  "peak_gpu_0_memory_MB": 4461,
+  "training_duration": "01:01:59",
+  "training_start_epoch": 0,
+  "training_epochs": 99,
+  "epoch": 99,
+  "training_loss": 0.10684594410503732,
+  "training_cpu_memory_MB": 3428.972,
+  "training_gpu_0_memory_MB": 4461,
+  "validation_BLEU": 0.03770444666837781,
+  "validation_overlap_based_metric": 0.3032083145051966,
+  "validation_loss": 61.094268798828125,
+  "best_validation_BLEU": 0.04033666844117765,
+  "best_validation_overlap_based_metric": 0.32128332580207863,
+  "best_validation_loss": 38.53536570072174
+
+
+6. sgd - 0.1
+
+"best_epoch": 47,
+  "peak_cpu_memory_MB": 3393.864,
+  "peak_gpu_0_memory_MB": 4461,
+  "training_duration": "00:57:59",
+  "training_start_epoch": 0,
+  "training_epochs": 99,
+  "epoch": 99,
+  "training_loss": 0.0029157623869431174,
+  "training_cpu_memory_MB": 3393.864,
+  "training_gpu_0_memory_MB": 4461,
+  "validation_BLEU": 0.05415768611312881,
+  "validation_overlap_based_metric": 0.3411658382286489,
+  "validation_loss": 66.35459017753601,
+  "best_validation_BLEU": 0.06170212964268117,
+  "best_validation_overlap_based_metric": 0.3624039765024853,
+  "best_validation_loss": 45.95160794258118
+
+
+4. glove -100 only no elmo
+
+  "best_epoch": 79,
+  "peak_cpu_memory_MB": 3054.504,
+  "peak_gpu_0_memory_MB": 1481,
+  "training_duration": "00:32:14",
+  "training_start_epoch": 0,
+  "training_epochs": 99,
+  "epoch": 99,
+  "training_loss": 0.11197369515510469,
+  "training_cpu_memory_MB": 3054.504,
+  "training_gpu_0_memory_MB": 1481,
+  "validation_BLEU": 0.0343744167337292,
+  "validation_overlap_based_metric": 0.3045639403524627,
+  "validation_loss": 63.632540702819824,
+  "best_validation_BLEU": 0.03683437471941202,
+  "best_validation_overlap_based_metric": 0.31902394938996836,
+  "best_validation_loss": 50.26333808898926
+
+
+5. glove - 300 only no elmo
+
+
+  "best_epoch": 24,
+  "peak_cpu_memory_MB": 3054.528,
+  "peak_gpu_0_memory_MB": 1471,
+  "training_duration": "00:32:53",
+  "training_start_epoch": 0,
+  "training_epochs": 99,
+  "epoch": 99,
+  "training_loss": 0.07208390858923566,
+  "training_cpu_memory_MB": 3054.528,
+  "training_gpu_0_memory_MB": 1471,
+  "validation_BLEU": 0.04500819009685982,
+  "validation_overlap_based_metric": 0.3131495707184817,
+  "validation_loss": 67.055837392807,
+  "best_validation_BLEU": 0.04090645860980649,
+  "best_validation_overlap_based_metric": 0.3488477180298238,
+  "best_validation_loss": 24.236677050590515
+
+6. glove - 300 + elmo + sgd 0.1
+
+"best_epoch": 39,
+  "peak_cpu_memory_MB": 3565.212,
+  "peak_gpu_0_memory_MB": 4469,
+  "training_duration": "00:54:55",
+  "training_start_epoch": 0,
+  "training_epochs": 99,
+  "epoch": 99,
+  "training_loss": 0.0028384072360871683,
+  "training_cpu_memory_MB": 3565.212,
+  "training_gpu_0_memory_MB": 4469,
+  "validation_BLEU": 0.05474347814890263,
+  "validation_overlap_based_metric": 0.3456845910528694,
+  "validation_loss": 62.2291214466095,
+  "best_validation_BLEU": 0.05094682883719698,
+  "best_validation_overlap_based_metric": 0.35743334839584273,
+  "best_validation_loss": 50.79255747795105
+
+
+
+7. glove - 300 + elmo + adam 0.01
+
+ "best_epoch": 89,
+  "peak_cpu_memory_MB": 3546.84,
+  "peak_gpu_0_memory_MB": 4477,
+  "training_duration": "00:54:37",
+  "training_start_epoch": 0,
+  "training_epochs": 99,
+  "epoch": 99,
+  "training_loss": 5.706178929065836,
+  "training_cpu_memory_MB": 3546.84,
+  "training_gpu_0_memory_MB": 4477,
+  "validation_BLEU": 8.685811456041635e-06,
+  "validation_overlap_based_metric": 0.24943515589697243,
+  "validation_loss": 37.74705350399017,
+  "best_validation_BLEU": 9.64467271397307e-06,
+  "best_validation_overlap_based_metric": 0.25576140985088114,
+  "best_validation_loss": 35.284592032432556
+
+
+
+8. glove - 300 + elmo + sgd 0.1 + hidden 50
+
+  "best_epoch": 29,
+  "peak_cpu_memory_MB": 3527.8,
+  "peak_gpu_0_memory_MB": 4515,
+  "training_duration": "00:52:00",
+  "training_start_epoch": 0,
+  "training_epochs": 99,
+  "epoch": 99,
+  "training_loss": 0.0153841159274352,
+  "training_cpu_memory_MB": 3527.8,
+  "training_gpu_0_memory_MB": 4515,
+  "validation_BLEU": 0.04560183278298322,
+  "validation_overlap_based_metric": 0.3438770899231812,
+  "validation_loss": 54.858277678489685,
+  "best_validation_BLEU": 0.05581429012130263,
+  "best_validation_overlap_based_metric": 0.36421147763217354,
+  "best_validation_loss": 29.626014709472656
+
+9. glove - 300 + elmo + sgd 0.1 + hidden 50 + elmo dropout 0.2
+
+
+
+10. Final
+
+
+11. Final4
+
+  "best_epoch": 79,
+  "peak_cpu_memory_MB": 3429.492,
+  "peak_gpu_0_memory_MB": 4467,
+  "training_duration": "01:32:06",
+  "training_start_epoch": 0,
+  "training_epochs": 99,
+  "epoch": 99,
+  "training_loss": 5.603175551315834,
+  "training_cpu_memory_MB": 3429.492,
+  "training_gpu_0_memory_MB": 4467,
+  "validation_BLEU": 0.08431691723449976,
+  "validation_overlap_based_metric": 0.45314622000905386,
+  "validation_loss": 19.324266850948334,
+  "best_validation_BLEU": 0.1120918538709718,
+  "best_validation_overlap_based_metric": 0.5310095065640561,
+  "best_validation_loss": 16.784230291843414
+
+12 Final3
+
+  "best_epoch": 42,
+  "peak_cpu_memory_MB": 3482.316,
+  "peak_gpu_0_memory_MB": 4471,
+  "training_duration": "01:34:14",
+  "training_start_epoch": 0,
+  "training_epochs": 99,
+  "epoch": 99,
+  "training_loss": 1.415873346246522,
+  "training_cpu_memory_MB": 3482.316,
+  "training_gpu_0_memory_MB": 4471,
+  "validation_BLEU": 0.09487993100351985,
+  "validation_overlap_based_metric": 0.4622000905387053,
+  "validation_loss": 25.60693347454071,
+  "best_validation_BLEU": 0.10859303576913502,
+  "best_validation_overlap_based_metric": 0.5011317338162065,
+  "best_validation_loss": 15.690802454948425
+
+13 final2 -- passthro folder
+
+  "best_epoch": 26,
+  "peak_cpu_memory_MB": 3577.688,
+  "peak_gpu_0_memory_MB": 4513,
+  "training_duration": "01:18:37",
+  "training_start_epoch": 0,
+  "training_epochs": 99,
+  "epoch": 99,
+  "training_loss": 2.733883688778713,
+  "training_cpu_memory_MB": 3577.688,
+  "training_gpu_0_memory_MB": 4513,
+  "validation_BLEU": 0.0883612608621636,
+  "validation_overlap_based_metric": 0.463558171118153,
+  "validation_loss": 21.709723830223083,
+  "best_validation_BLEU": 0.09423332360134734,
+  "best_validation_overlap_based_metric": 0.5282933454051607,
+  "best_validation_loss": 14.61601585149765
+
+
+14. Final -- final folder
+
+  "best_epoch": 66,
+  "peak_cpu_memory_MB": 3539.672,
+  "peak_gpu_0_memory_MB": 6949,
+  "training_duration": "00:35:47",
+  "training_start_epoch": 0,
+  "training_epochs": 99,
+  "epoch": 99,
+  "training_loss": 4.593320547717891,
+  "training_cpu_memory_MB": 3539.672,
+  "training_gpu_0_memory_MB": 6949,
+  "validation_BLEU": 0.057543851972054756,
+  "validation_overlap_based_metric": 0.44499773653236757,
+  "validation_loss": 19.66144299507141,
+  "best_validation_BLEU": 0.08104008969386339,
+  "best_validation_overlap_based_metric": 0.5033952014486193,
+  "best_validation_loss": 15.954333305358887
+
+
+stackedEncoder
+Adam
+
+
+Final5 -- epochs=200 adam 0.01 --- 20-9
+  "best_epoch": 57,
+  "peak_cpu_memory_MB": 3492.46,
+  "peak_gpu_0_memory_MB": 4517,
+  "training_duration": "02:02:32",
+  "training_start_epoch": 0,
+  "training_epochs": 199,
+  "epoch": 199,
+  "training_loss": 10.832055174071213,
+  "training_cpu_memory_MB": 3492.46,
+  "training_gpu_0_memory_MB": 4517,
+  "validation_BLEU": 0.04601922356433189,
+  "validation_overlap_based_metric": 0.39565414214576733,
+  "validation_loss": 16.791777193546295,
+  "best_validation_BLEU": 0.053467821208363714,
+  "best_validation_overlap_based_metric": 0.43141693073789045,
+  "best_validation_loss": 17.07445538043976
+
+
+Final6 -- same as final 2 s-------> 0.528 ---->20-3
+
+-- Same experiments 
+  "best_epoch": 26,
+  "peak_cpu_memory_MB": 3410.44,
+  "peak_gpu_0_memory_MB": 4513,
+  "training_duration": "00:50:52",
+  "training_start_epoch": 0,
+  "training_epochs": 99,
+  "epoch": 99,
+  "training_loss": 2.724287675166952,
+  "training_cpu_memory_MB": 3410.44,
+  "training_gpu_0_memory_MB": 4513,
+  "validation_BLEU": 0.09091845449257742,
+  "validation_overlap_based_metric": 0.47487550928021727,
+  "validation_loss": 21.92641282081604,
+  "best_validation_BLEU": 0.09422761838620204,
+  "best_validation_overlap_based_metric": 0.5287460389316433,
+  "best_validation_loss": 14.615508556365967
+
+
+Final7 --- Final4 with 200 epochs --->0.531 ----> 20-7
+
+"best_epoch": 118,
+  "peak_cpu_memory_MB": 3439.304,
+  "peak_gpu_0_memory_MB": 4467,
+  "training_duration": "02:01:05",
+  "training_start_epoch": 0,
+  "training_epochs": 199,
+  "epoch": 199,
+  "training_loss": 1.1209771018603751,
+  "training_cpu_memory_MB": 3439.304,
+  "training_gpu_0_memory_MB": 4467,
+  "validation_BLEU": 0.0940127215711877,
+  "validation_overlap_based_metric": 0.4775916704391127,
+  "validation_loss": 28.60118991136551,
+  "best_validation_BLEU": 0.09915199101132127,
+  "best_validation_overlap_based_metric": 0.5038478949751019,
+  "best_validation_loss": 19.257739901542664
+
+
+Final8 -- stacked autoencoder
+  "best_epoch": 62,
+  "peak_cpu_memory_MB": 3431.968,
+  "peak_gpu_0_memory_MB": 4483,
+  "training_duration": "00:53:27",
+  "training_start_epoch": 0,
+  "training_epochs": 99,
+  "epoch": 99,
+  "training_loss": 16.940425767569707,
+  "training_cpu_memory_MB": 3431.968,
+  "training_gpu_0_memory_MB": 4483,
+  "validation_BLEU": 1.1577076072065901e-05,
+  "validation_overlap_based_metric": 0.1480307831598008,
+  "validation_loss": 17.863557279109955,
+  "best_validation_BLEU": 0.037382554584943,
+  "best_validation_overlap_based_metric": 0.15708465368945224,
+  "best_validation_loss": 17.95193773508072
+
+
+Final9 -- More features
+
+  "best_epoch": 26,
+  "peak_cpu_memory_MB": 3431.92,
+  "peak_gpu_0_memory_MB": 4469,
+  "training_duration": "01:00:08",
+  "training_start_epoch": 0,
+  "training_epochs": 99,
+  "epoch": 99,
+  "training_loss": 0.71529775169389,
+  "training_cpu_memory_MB": 3431.92,
+  "training_gpu_0_memory_MB": 4469,
+  "validation_BLEU": 0.08140967536684493,
+  "validation_overlap_based_metric": 0.482571299230421,
+  "validation_loss": 28.658344209194183,
+  "best_validation_BLEU": 0.11054171317339129,
+  "best_validation_overlap_based_metric": 0.523766410140335,
+  "best_validation_loss": 14.996475666761398
+
+final8 -- selfattention -- less dimensions
+
+"best_epoch": 8,
+  "peak_cpu_memory_MB": 3424.144,
+  "peak_gpu_0_memory_MB": 4527,
+  "training_duration": "01:12:49",
+  "training_start_epoch": 0,
+  "training_epochs": 99,
+  "epoch": 99,
+  "training_loss": 16.948183181368073,
+  "training_cpu_memory_MB": 3424.144,
+  "training_gpu_0_memory_MB": 4527,
+  "validation_BLEU": 0.05294672893987678,
+  "validation_overlap_based_metric": 0.14440923494794025,
+  "validation_loss": 17.90847110748291,
+  "best_validation_BLEU": 0.04956824179969763,
+  "best_validation_overlap_based_metric": 0.15708465368945224,
+  "best_validation_loss": 17.962619304656982
+
+
+final10 --- same as final4
+
+
+
+final12 same as 0.528
+2019-02-14 15:53:20,814 - INFO - allennlp.common.util - Metrics: {
+  "best_epoch": 26,
+  "peak_cpu_memory_MB": 3418.588,
+  "peak_gpu_0_memory_MB": 4513,
+  "training_duration": "01:03:27",
+  "training_start_epoch": 0,
+  "training_epochs": 99,
+  "epoch": 99,
+  "training_loss": 2.733868178005876,
+  "training_cpu_memory_MB": 3418.588,
+  "training_gpu_0_memory_MB": 4513,
+  "validation_BLEU": 0.0883612608621636,
+  "validation_overlap_based_metric": 0.463558171118153,
+  "validation_loss": 21.70944571495056,
+  "best_validation_BLEU": 0.09423332360134734,
+  "best_validation_overlap_based_metric": 0.5282933454051607,
+  "best_validation_loss": 14.61601585149765
+}
+
