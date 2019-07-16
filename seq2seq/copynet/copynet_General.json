@@ -1,0 +1,63 @@
+{
+  "dataset_reader": {
+    "target_namespace": "target_tokens",
+    "type": "copynet_seq2seq",
+    "source_tokenizer": {
+      "type": "word"
+    },
+    "target_tokenizer": {
+      "type": "word"
+    },
+    "source_token_indexers": {
+      "tokens": {
+        "type": "single_id",
+        "namespace": "source_tokens"
+      }
+    }
+  },
+  "train_data_path": "processedData/Original_Fact2/trainDataSeq2seq.tsv",
+  "validation_data_path": "processedData/Original_Fact2/devDataSeq2seq.tsv",
+  "model": {
+    "type": "copynet_seq2seq",
+    "source_embedder": {
+      "token_embedders": {
+        "tokens": {
+          "type": "embedding",
+          "vocab_namespace": "source_tokens",
+          "embedding_dim": 10,
+          "trainable": true
+        }
+      }
+    },
+    "encoder": {
+      "type": "lstm",
+      "input_size": 10,
+      "hidden_size": 10,
+      "num_layers": 1
+    },
+    "attention": {
+      "type": "bilinear",
+    "vector_dim": 10,
+      "matrix_dim": 50
+
+    },
+    "target_embedding_dim": 10,
+    "beam_size": 3,
+    "max_decoding_steps": 20
+  },
+  "iterator": {
+    "type": "bucket",
+    "padding_noise": 0.0,
+    "batch_size" : 50,
+    "sorting_keys": [["source_tokens", "num_tokens"]]
+  },
+  "trainer": {
+    "num_epochs": 30,
+    "cuda_device": 0,
+    "patience":10,
+    "optimizer": {
+      "type": "sgd",
+      "lr": 0.001
+    }
+  }
+}

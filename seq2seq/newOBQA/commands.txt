@@ -1,0 +1,22 @@
+CUDA_VISIBLE_DEVICES=3 python run.py train experiments/bidaf.json --include-package squad2.dataset_readers --include-package squad2.models -s squad2/output --recover
+
+CUDA_VISIBLE_DEVICES=0 python run.py train experiments/copynet_novocab.json --include-package models -s output1/
+
+python run.py predict output_final12/model.tar.gz ../IRFact2/irdataset/top10-merged-valSeq2seq.tsv --predictor seq2seq --use-dataset-reader --output-file IR_ouputs/IR_new_top10_val.json --include-package models
+
+
+python run.py predict output_final12/model.tar.gz ../IRFact2/irdataset/top10-merged-testSeq2seq.tsv --predictor seq2seq --use-dataset-reader --output-file IR_ouputs/IR_new_top10_test.json --include-package models
+
+python run.py predict output_final12/model.tar.gz ../IRFact2/irdataset/val-trainedSeq2seq.tsv --predictor seq2seq --use-dataset-reader --output-file IR_ouputs/IR_new_val.json --include-package models --include-package models
+
+python run.py predict output_final12/model.tar.gz ../IRFact2/irdataset/test-trainedSeq2seq.tsv --predictor seq2seq --use-dataset-reader --output-file IR_ouputs/IR_new_test.json --include-package models
+
+python run.py predict output_final12/model.tar.gz ../IRFact2/irdataset/trainSeq2seq.tsv --predictor seq2seq --use-dataset-reader --output-file IR_ouputs/IR_new_train.json --include-package models
+
+=====================================================================
+LATEST
+------
+
+CUDA_VISIBLE_DEVICES=0 python run.py train experiments/final14.json --include-package models --include-package dataset_readers --include-package metrics -s output_final14
+
+
