@@ -4,7 +4,9 @@ open book question answering
 
 
 # Data Set
-OBQA
+OBQA 
+[Link to Dataset](https://leaderboard.allenai.org/open_book_qa/submissions/about)
+
 
 ## Parsing and Tagging of Wh Questions
 1. Parser and Tagger are taken from https://github.com/tdozat/Parser-v3.
