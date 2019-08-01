@@ -21,6 +21,9 @@ OBQA
     * Key Point to Note: CoNLLU format needs to be adhered strictly, Tabs between columns.
     * Trained Models to be pushed at a location : [DropboxLocation]
     
+## Knowledge selection from OpenBook facts
+1. Present in folder ir, with its own ReadMe
+    
 ## Word Intersection, Union and Seq2Seq Abductive IR 
 1. Present in notebooks and folders
 
