@@ -137,23 +137,3 @@ for ranked,name in zip([ranked_tfidf,ranked_sts,ranked_trained,ranked_cnn,ranked
     score_ranked_fact1(ranked,[val],knowledgemap,knowledge,is_merged=False)
     print("Test")
     score_ranked_fact1(ranked,[test],knowledgemap,knowledge,is_merged=False)
-    
-    
-print("Scoring Merged")
-    
-spacy_merged = merge_ranked(ranked_spacy)
-sts_merged = merge_ranked(ranked_sts)
-trained_merged = merge_ranked(ranked_trained)
-tfidf_merged = merge_ranked(ranked_tfidf)
-qnli_merged = merge_ranked(ranked_qnli)
-simple_merged = merge_ranked(ranked_simple)
-cnn_merged = merge_ranked(ranked_cnn)
-
-# for ranked in [spacy_merged,sts_merged,trained_merged,tfidf_merged,qnli_merged,simple_merged,cnn_merged]:
-for ranked,name in zip([tfidf_merged,ranked_sts,ranked_trained,ranked_cnn,ranked_simple],["tfidf","sts","trained","cnn","simple"]):
-    print("Model:",name)
-    print("Val")
-    score_ranked_fact1(ranked,[val],knowledgemap,knowledge,is_merged=True)
-    print("Test")
-    score_ranked_fact1(ranked,[test],knowledgemap,knowledge,is_merged=True)
-
