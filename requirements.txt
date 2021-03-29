@@ -120,7 +120,7 @@ pyaml==18.11.0
 pyasn1==0.4.5
 pycparser==2.19
 pycryptodome==3.8.0
-Pygments==2.3.1
+Pygments==2.7.4
 pylint==1.8.1
 pyOpenSSL==19.0.0
 pypandoc==1.4
